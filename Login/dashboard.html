@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="dashboard-style.css" />
+  </head>
+  <body>
+    <!-- Create a table with name and email -->
+    <button class="logout">Logout</button>
+    <button class="change-password">
+      Change Password
+    </button>
+    <main>
+      <div>
+        <h1>Dashboard</h1>
+        <p>Welcome to the dashboard</p>
+        <button class="refresh">Refresh</button>
+      </div>
+      <table class="table">
+      </table>
+    </main>
+    <div class="hidden form-container">
+      <form>
+          <h2>Change Password</h2>
+          <input type="password" placeholder="New Password" class="new-password"  required/>
+          <input type="password" placeholder="Confirm Password" class="confirm-password" required/>
+          <p class="error hidden"></p>
+          <button type="button" class="confirmBtn">Confirm</button>
+      </form>
+      <div class="overlay"></div>
+    </div>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
